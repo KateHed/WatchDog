@@ -1,0 +1,25 @@
+<idea-plugin>
+    <id>gqf.WatchDog</id>
+    <name>WatchDog</name>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <action id="EditorBasics.EditorBlankCheck" class="EditorBlankCheck" text="Say Hello"
+                description="Illustrates how to plug an action in">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+        <action id="EditorBasics.EditorAreaIllustration" class="EditorAreaIllustration" text="Caret Position"
+                description="Illustrates how to plug an action in">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
