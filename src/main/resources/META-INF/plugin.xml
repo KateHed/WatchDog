@@ -1,12 +1,6 @@
 <idea-plugin>
-    <id>gqf.WatchDog</id>
-    <name>Plugin display name here</name>
-    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
-
-    <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
-    ]]></description>
+    <id>gqf.EditorTest</id>
+    <name>EditorTest</name>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
@@ -19,6 +13,13 @@
     </extensions>
 
     <actions>
-        <!-- Add your actions here -->
+        <action id="EditorBasics.EditorBlankCheck" class="EditorBlankCheck" text="Say Hello"
+                description="Illustrates how to plug an action in">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+        <action id="EditorBasics.EditorAreaIllustration" class="EditorAreaIllustration" text="Caret Position"
+                description="Illustrates how to plug an action in">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
     </actions>
 </idea-plugin>
